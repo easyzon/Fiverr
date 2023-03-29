@@ -28,19 +28,20 @@ include('./include/header.php');
             <li class="col-auto">Become a Seller</li>
         </ul>
         <a href="#" class="d-none d-sm-block text-white col-auto my-auto text-end fs-6 fw-semibold" data-toggle="modal"
-            data-target="#Modal_2" id="myButton">Sign In</a>
+            data-target="#Modal_1" id="myButton">Sign In</a>
         <a href="#"
-            class="join-btn col-auto my-auto text-white text-end fs-6 px-3 py-1 fw-semibold border border-1 border-white rounded-2">Join</a>
+            class="join-btn col-auto my-auto text-white text-end fs-6 px-3 py-1 fw-semibold border border-1 border-white rounded-2"
+            data-toggle="modal"data-target="#Modal_2" id="joinow" >
+            Join</a>
     </div>
 </nav>
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+
+<!-- Signin Model -->
+<div class="modal fade" id="Signin" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
         <div class="modal-content  .modal-dialog-scrollable">
             <div class="modal-header justify-content-center">
                 <h5 class="modal-title text-align-center">Sign In to Fiverr</h5>
-                <!-- <button type="button" class="close btn btn-secondary" id="cls" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button> -->
             </div>
             <style>
                 /* modal */
@@ -118,14 +119,107 @@ include('./include/header.php');
                             <footer class="footer sticky-footer">
                                 <!-- footer content goes here -->
                                 <div class="container text-center">
-                                <div class="row align-items-start">
-                                    <div class="col">
-                                    Not a member yet?
+                                    <div class="row align-items-start">
+                                        <div class="col">
+                                            Not a member yet?
+                                        </div>
+                                        <a href="#"> Join now</a>
+
                                     </div>
-                                    <a href="#"> Join now</a>
-                                    
+                                </div>
+                            </footer>
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Join Now Model  -->
+<div class="modal fade" id="joinnow" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content  .modal-dialog-scrollable">
+            <div class="modal-header justify-content-center">
+                <h5 class="modal-title text-align-center">Join Fiverr</h5>
+            </div>
+            <style>
+                /* modal */
+                h4.inner-heading-modal {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    font-family: serif;
+
+                }
+            </style>
+            <div class="modal-body modal-sm">
+                <!-- Login Lists -->
+                <section class="selection-list">
+                    <div class="list-group">
+                        <!-- Facebook -->
+                        <a href="#" class=" list-group-item-action " aria-current="true">
+                            <h4 class="inner-heading-modal btn"
+                                style="background:#4267b2;color:#fff ;border: 1px solid #4267b2;"><i
+                                    class="fa-brands fa-facebook fa-s" style="color: #e1e1e1;"></i>continue with
+                                Facebook
+                            </h4>
+                        </a>
+                        <!-- Google -->
+                        <a href="#" class="btn list-group-item-action " aria-current="true">
+                            <h4 class="inner-heading-modal btn"
+                                style="background:#fff;color:#000 ;border: 1px solid #e4e5e7;"><i
+                                    class="fa-brands fa-google fa-s" style="color: #e1e1e1;"></i>continue with Google
+                            </h4>
+                        </a>
+                        <!-- Apple -->
+                        <a href="#" class="btn list-group-item-action " aria-current="true">
+                            <h4 class="inner-heading-modal btn"
+                                style="background:#fff;color:#000 ;border: 1px solid #e4e5e7;"><i
+                                    class="fa-brands fa-apple fa-s" style="color: #e1e1e1;"></i>continue with Apple
+                            </h4>
+                        </a>
+                        <hr />
+                        <div class="container">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="inputName" class="col-sm-1-12 col-form-label"></label>
+                                    <div class="col-sm-1-12">
+                                        <input type="text" class="form-control" name="inputName" id="inputName"
+                                            placeholder="Email/ Username" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row mt-2 mb-2">
+                                    <div class="col-sm-1-12 ">
+                                        <button type="submit" class="btn "
+                                            style="background-color: #1dbf73;color:#fff;width:100%;">Continue</button>
+                                    </div>
+                                </div>
+
+                            </form>
+                            <div class="container text-center">
+                                <div class="row align-items-start">
+
+                                    <div class="col">
+                                        <span> By joining I agree to receive emails from Fiverr.
+                                        </span>
+                                    </div>
+
                                 </div>
                             </div>
+                            <footer class="footer sticky-footer">
+                                <!-- footer content goes here -->
+                                <div class="container text-center">
+                                    <div class="row align-items-start">
+                                        <div class="col">
+                                            Already a member?
+                                        </div>
+                                        <a href="#Modal_1"> Signin now</a>
+
+                                    </div>
+                                </div>
                             </footer>
                         </div>
 
@@ -399,12 +493,13 @@ include('./include/header.php');
 
 
 <script>
-    //Login & Signup Button
+    //Signin Button
     $('#myButton').click(function () {
-        $('#myModal').modal('show');
+        $('#Signin').modal('show');
     });
-    $('#cls').click(function () {
-        $('#myModal').modal('hide');
+   // joinow Button
+   $('#joinow').click(function () {
+        $('#joinnow').modal('show');
     });
 </script>
 <?php
