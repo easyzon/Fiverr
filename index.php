@@ -31,7 +31,7 @@ include('./include/header.php');
             data-target="#Modal_1" id="myButton">Sign In</a>
         <a href="#"
             class="join-btn col-auto my-auto text-white text-end fs-6 px-3 py-1 fw-semibold border border-1 border-white rounded-2"
-            data-toggle="modal"data-target="#Modal_2" id="joinow" >
+            data-toggle="modal" data-target="#Modal_2" id="joinow">
             Join</a>
     </div>
 </nav>
@@ -149,10 +149,11 @@ include('./include/header.php');
                 /* modal */
                 h4.inner-heading-modal {
                     display: flex;
-                    flex-direction: column;
+                    flex-direction: row;
                     align-items: center;
                     font-family: serif;
-
+                    justify-content: flex-start;
+                    gap: 113px;
                 }
             </style>
             <div class="modal-body modal-sm">
@@ -171,14 +172,14 @@ include('./include/header.php');
                         <a href="#" class="btn list-group-item-action " aria-current="true">
                             <h4 class="inner-heading-modal btn"
                                 style="background:#fff;color:#000 ;border: 1px solid #e4e5e7;"><i
-                                    class="fa-brands fa-google fa-s" style="color: #e1e1e1;"></i>continue with Google
+                                    class="fa-brands fa-google fa-s" style="color: #000;"></i>continue with Google
                             </h4>
                         </a>
                         <!-- Apple -->
                         <a href="#" class="btn list-group-item-action " aria-current="true">
                             <h4 class="inner-heading-modal btn"
                                 style="background:#fff;color:#000 ;border: 1px solid #e4e5e7;"><i
-                                    class="fa-brands fa-apple fa-s" style="color: #e1e1e1;"></i>continue with Apple
+                                    class="fa-brands fa-apple fa-s" style="color: #000;"></i>continue with Apple
                             </h4>
                         </a>
                         <hr />
@@ -209,26 +210,30 @@ include('./include/header.php');
 
                                 </div>
                             </div>
+                            <hr />
                             <footer class="footer sticky-footer">
                                 <!-- footer content goes here -->
                                 <div class="container text-center">
-                                    <div class="row align-items-start">
+                                    <div class="row align-items-center">
                                         <div class="col">
                                             Already a member?
                                         </div>
-                                        <a href="#Modal_1"> Signin now</a>
-
+                                        <div class="col">
+                                            <a href="#Modal_1" class=" btn-model-signin"> Signin now</a>
+                                        </div>
                                     </div>
+
                                 </div>
-                            </footer>
                         </div>
-
+                        </footer>
                     </div>
-                </section>
-            </div>
 
+            </div>
+            </section>
         </div>
+
     </div>
+</div>
 </div>
 <!-- Options nav -->
 <nav class="nav-options border-top border-bottom border-1 p-0 fixed-top d-none" id="nav-options">
@@ -497,8 +502,8 @@ include('./include/header.php');
     $('#myButton').click(function () {
         $('#Signin').modal('show');
     });
-   // joinow Button
-   $('#joinow').click(function () {
+    // joinow Button
+    $('#joinow').click(function () {
         $('#joinnow').modal('show');
     });
 </script>
