@@ -304,3 +304,13 @@ nav {
   display: flex;
   justify-content: center !important;
 } */
+/*  */
+.btn-model-signin{
+  color:#1dbf73 !important;
+  text-decoration: underline;
+}
+.btn-model-signin :hover{
+  color:#1dbf73;
+  text-decoration: none;
+
+}
