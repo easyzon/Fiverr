@@ -31,7 +31,7 @@ require('./curdform/connect.php');
             Join</a>
     </div>
 </nav>
-
+    
 <!-- Signin Model -->
 <div class="modal fade" id="Signin" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
