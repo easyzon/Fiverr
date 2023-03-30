@@ -6,5 +6,5 @@
 
 	mysqli_query($con,$del_query);
 	
-	header("location:index.php");
+	header("location:/index.php");
 ?>

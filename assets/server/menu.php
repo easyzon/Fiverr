@@ -12,7 +12,7 @@
 	</thead>
     <body>
 		<div class="container mt-2">
-		<a href="index.php" class="btn btn-outline-primary text-center">Add User</a>
+		<a href="/index.php" class="btn btn-outline-primary text-center">Add User</a>
 		</div>
 		<div class="container mt-5">
 <table class="table table-bordered ">
