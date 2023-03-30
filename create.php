@@ -16,7 +16,7 @@
 		{	
 			
 			$success = 0;	
-			header("location:easyzon/Fiverr/index.php?success=$success");	
+			header("location:index.php?success=$success");	
 			//echo "Record already exists .Try another one....!!"; die;
 		}
  
@@ -28,7 +28,7 @@
 		mysqli_query($con,$insert_query);
 		//mysql_query("INSERT INTO `users` ( ``, `password`) VALUES ( '', '$password');");
 		$success = 1;
-		header("location:easyzon/Fiverr/index.php?success=$success");
+		header("location:index.php?success=$success");
 
 		}
 

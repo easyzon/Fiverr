@@ -34,7 +34,7 @@
         <div class="pass">Forgot Password?</div>
         <input type="submit" value="Login" name="login">
         <div class="signup_link">
-          Not a member? <a href="easyzon/Fiverr/index.php">Signup Here</a>
+          Not a member? <a href="index.php">Signup Here</a>
         </div>
 
       </form>

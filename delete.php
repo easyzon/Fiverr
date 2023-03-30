@@ -6,5 +6,5 @@
 
 	mysqli_query($con,$del_query);
 	
-	header("location:easyzon/Fiverr/index.php");
+	header("location:index.php");
 ?>

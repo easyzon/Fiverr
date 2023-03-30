@@ -1,6 +1,6 @@
 <?php
 include('./include/header.php');
-require('./curdform/connect.php');
+require('connect.php');
 ?>
 
 <!-- Top navbar -->
@@ -27,11 +27,11 @@ require('./curdform/connect.php');
             <li class="col-auto">Become a Seller</li>
         </ul>
         <a href="#" class="d-none d-sm-block text-white col-auto my-auto text-end fs-6 fw-semibold" data-toggle="modal" data-target="#Modal_1" id="myButton">Sign In</a>
-        <a href="./curdform/login1.php" class="join-btn col-auto my-auto text-white text-end fs-6 px-3 py-1 fw-semibold border border-1 border-white rounded-2" data-toggle="modal" data-target="" id="">
+        <a href="login1.php" class="join-btn col-auto my-auto text-white text-end fs-6 px-3 py-1 fw-semibold border border-1 border-white rounded-2" data-toggle="modal" data-target="" id="">
             Join</a>
     </div>
 </nav>
-    
+
 <!-- Signin Model -->
 <div class="modal fade" id="Signin" tabindex="-1" role="dialog">
     <div class="modal-dialog" role="document">
@@ -83,7 +83,7 @@ require('./curdform/connect.php');
 
                         ?>
                         <div class="container">
-                            <form action="./curdform/create.php" method="post">
+                            <form action="create.php" method="post">
                                 <div class="form-group row">
                                     <label for="inputName" class="col-sm-1-12 col-form-label"></label>
                                     <div class="col-sm-1-12">
@@ -181,7 +181,7 @@ require('./curdform/connect.php');
                         </a>
                         <hr />
                         <?php
-                        require('./curdform/connect.php');
+                        require('connect.php');
                         ?>
                         <div class="container">
                             <form action="login.php" method="post">
