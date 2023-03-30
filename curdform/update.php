@@ -9,5 +9,5 @@
 	
 	mysqli_query($con,$update_query);
 	
-	header("location:index.php");
+	header("location:easyzon/Fiverr/index.php");
 ?>
