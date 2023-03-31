@@ -1,6 +1,6 @@
 <?php
 include('./include/header.php');
-require('connect.php');
+require('./assets/server/connect.php');
 ?>
 
 <!-- Top navbar -->
@@ -187,7 +187,7 @@ require('connect.php');
                         </a>
                         <hr />
                         <?php
-                        require('connect.php');
+                        require('./assets/server/connect.php');
                         ?>
                         <div class="container">
                             <form action="login.php" method="post">
