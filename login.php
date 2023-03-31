@@ -11,15 +11,12 @@
 		{	
 		  //die('test');
             $success = 0;	
-			header("location:menu.php?success=$success");
+			header("location:dashboard/index.php?success=$success");
 		}
-        else
-        {   
-            die('record does not exists..');
-            //record does not exists..
-
-
-        }
-
+        {
+			//do stuff
+			//die('sdsd');
+			echo "Record already exists .Try another one....!!";
+		}
 
 ?>

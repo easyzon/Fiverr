@@ -71,15 +71,21 @@ require('connect.php');
                         </a>
                         <hr />
                         <?php
-                        if (isset($_GET['success'])) {
-                            if ($_GET['success'] == '0') {
+                       // print_r($_GET['success']);
+		// die('sd');	
+		$success = '';
 
-                                echo "Recod already exists";
-                            } else {
-                                echo "Record Successfull";
-                            }
-                        }
+		if (isset($_GET["success"]) && $_GET["success"]=='0')
+		{
+			//do stuff
+			//die('sdsd');
+			echo "Record already exists .Try another one....!!";
+		}
+		elseif (isset($_GET["success"]) && $_GET["success"]=='1')
+		{
 
+			echo "Record successfully updated";
+		}
 
                         ?>
                         <div class="container">
